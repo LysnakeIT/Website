@@ -161,4 +161,138 @@ export default {
     </section>
 </template>
 
-<style scoped></style>
+<style>
+.parcours {
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.parcours [data-content]{
+    display: none;
+}
+
+.parcours__tabs{
+    display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;;
+}
+
+.parcours__button{
+    font-size: 1.686rem;
+    font-weight: 500;
+    cursor: pointer;
+	margin: 0 1rem;
+}
+
+.parcours__button:hover{
+    color: hsl(336, 88%, 45%);
+}
+
+.parcours__button.parcours__active{
+    color: hsl(336, 88%, 45%);
+}
+
+.parcours__active[data-content]{
+    display: block;
+	margin: 0;
+}
+
+.parcours__icon{
+    font-size: 1.8rem;
+    margin-right: .25rem;
+}
+
+.parcours__sections{
+	display: grid;
+    justify-content: center;
+}
+
+.parcours__data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+	text-align: initial;
+}
+
+.parcours__title{
+	font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.parcours__subtitle{
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: .55rem;
+}
+
+.parcours__calendar{
+	font-family: 'Nunito', sans-serif;
+    font-size: .80rem;
+    color: hsl(250, 8%, 65%);
+}
+
+.parcours__rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: hsl(336, 88%, 45%);
+    border-radius: 50%;
+}
+
+.parcours__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: hsl(336, 88%, 45%);
+    transform: translate(6px, -7px);
+}
+
+@media (max-width: 290px) {
+	.parcours__title{
+		font-size: 0.80rem;
+		font-weight: 500;
+	}
+	
+	.parcours__subtitle{
+		display: inline-block;
+		font-size: 0.65rem;
+		margin-bottom: .55rem;
+	}
+	
+	.parcours__calendar{
+		font-family: 'Nunito', sans-serif;
+		font-size: .55rem;
+		color: hsl(250, 8%, 65%);
+	}
+
+	.parcours__button{
+		font-size: 1rem;
+		font-weight: 500;
+		cursor: pointer;
+		margin: 0 1rem;
+	}
+
+	.link-hover {
+		font-size: 0.85rem;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+	.parcours__title{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	
+	.parcours__subtitle{
+		display: inline-block;
+		font-size: 0.85rem;
+		margin-bottom: .55rem;
+	}
+	
+	.parcours__calendar{
+		font-family: 'Nunito', sans-serif;
+		font-size: .65rem;
+		color: hsl(250, 8%, 65%);
+	}
+}
+</style>
