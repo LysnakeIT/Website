@@ -1,0 +1,388 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/*==================== Font ====================*/
+
+@font-face {
+	font-family: 'GeneralSans-Regular';
+	src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Regular.woff') format('woff'),
+		url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-regular {
+	font-family: 'GeneralSans-Regular';
+}
+
+@font-face {
+	font-family: 'GeneralSans-Medium';
+	src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Medium.woff') format('woff'),
+		url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-medium {
+	font-family: 'GeneralSans-Medium';
+}
+
+@font-face {
+	font-family: 'GeneralSans-Semibold';
+	src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+		url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-semibold {
+	font-family: 'GeneralSans-Semibold';
+}
+
+@font-face {
+	font-family: 'GeneralSans-Bold';
+	src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+		url('../fonts/GeneralSans-Bold.woff') format('woff'),
+		url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-bold {
+	font-family: 'GeneralSans-Bold';
+}
+
+/*==================== General ====================*/
+.router-link-active,
+.router-link-exact-active {
+	@apply text-indigo-800;
+	@apply text-indigo-600 dark:text-indigo-300;
+}
+* {
+	box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+	.h2, h2 {
+    	font-size: 2rem;
+	}
+}
+.h1, .h2, h1, h2 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+body {
+	font-family: 'GeneralSans-Regular';
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent;
+}
+
+/*==================== Parcours ====================*/
+
+.parcours {
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.parcours [data-content]{
+    display: none;
+}
+
+.parcours__tabs{
+    display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;;
+}
+
+.parcours__button{
+    font-size: 1.686rem;
+    font-weight: 500;
+    cursor: pointer;
+	margin: 0 1rem;
+}
+
+.parcours__button:hover{
+    color: hsl(336, 88%, 45%);
+}
+
+.parcours__button.parcours__active{
+    color: hsl(336, 88%, 45%);
+}
+
+.parcours__active[data-content]{
+    display: block;
+	margin: 0;
+}
+
+.parcours__icon{
+    font-size: 1.8rem;
+    margin-right: .25rem;
+}
+
+.parcours__sections{
+	display: grid;
+    justify-content: center;
+}
+
+.parcours__data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+	text-align: initial;
+}
+
+.parcours__title{
+	font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.parcours__subtitle{
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: .55rem;
+}
+
+.parcours__calendar{
+	font-family: 'Nunito', sans-serif;
+    font-size: .80rem;
+    color: hsl(250, 8%, 65%);
+}
+
+.parcours__rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: hsl(336, 88%, 45%);
+    border-radius: 50%;
+}
+
+.parcours__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: hsl(336, 88%, 45%);
+    transform: translate(6px, -7px);
+}
+
+@media (max-width: 290px) {
+	.parcours__title{
+		font-size: 0.80rem;
+		font-weight: 500;
+	}
+	
+	.parcours__subtitle{
+		display: inline-block;
+		font-size: 0.65rem;
+		margin-bottom: .55rem;
+	}
+	
+	.parcours__calendar{
+		font-family: 'Nunito', sans-serif;
+		font-size: .55rem;
+		color: hsl(250, 8%, 65%);
+	}
+
+	.parcours__button{
+		font-size: 1rem;
+		font-weight: 500;
+		cursor: pointer;
+		margin: 0 1rem;
+	}
+
+	.link-hover {
+		font-size: 0.85rem;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+	.parcours__title{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+	
+	.parcours__subtitle{
+		display: inline-block;
+		font-size: 0.85rem;
+		margin-bottom: .55rem;
+	}
+	
+	.parcours__calendar{
+		font-family: 'Nunito', sans-serif;
+		font-size: .65rem;
+		color: hsl(250, 8%, 65%);
+	}
+}
+
+/*==================== Skills ====================*/
+
+.section:not(.page) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section {
+    outline: none;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    margin-right: calc(-.5*var(--bs-gutter-x));
+    margin-left: calc(-.5*var(--bs-gutter-x));
+}
+
+.col-lg-6{flex:0 0 auto;width:50%}
+.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x)*.5);padding-left:calc(var(--bs-gutter-x)*.5);margin-top:var(--bs-gutter-y)}
+
+@media (min-width: 1400px) {
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    	max-width: 1320px;
+	}
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+	padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 992px){
+	.col-lg-6 {
+    	flex: 0 0 auto;
+    	width: 50%;
+	}
+}
+
+.section .text-box-inline > *:not(.subtitle):not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.toggle-switch-btn {
+	position: relative;
+	display: flex;
+	height: 46px;
+	width: fit-content;
+	padding: 4px;
+	border: 1px solid;
+	border-radius: 30px;
+}
+
+.toggle-switch-btn input {
+	position: absolute;
+	height: 0;
+	width: 0;
+	opacity: 0;
+}
+
+.toggle-switch-btn input:checked+label {
+    color: hsl(0, 0%, 100%);
+}
+
+.toggle-switch-btn label {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color .2s cubic-bezier(.4,0,.2,1);
+    color: #000;
+}
+
+.toggle-switch-btn .switcher-toggle {
+	position: absolute;
+	z-index: 0;
+	top: 4px;
+	height: calc(46px - (4px * 2) - 2px);
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: hsl(336, 88%, 45%);
+}
+
+.toggle-switch-btn input:nth-of-type(2):checked ~ .switcher-toggle {
+	transform: translateX(100%);
+}
+
+.skills-section .section-content {
+	align-items: center;
+	margin-bottom: -50px;
+}
+.skills-section .section-content > * {
+	margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+	.skills-section .section-content .skills-text .toggle-switch-btn {
+		margin: auto;
+	}
+}
+.skills-section .section-content .skills-items ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 -8px -16px;
+}
+.skills-section .section-content .skills-items li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	width: 80px;
+	margin: 0 8px 16px;
+	border-radius: 0.63rem;
+	animation: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+	background-color: hsl(0, 0%, 19%);
+	box-shadow: 11px 10px 38px rgba(0, 0, 0, 0.38);
+}
+.skills-section .section-content .skills-items li .skill-icon img {
+	display: block;
+	width: 48px;
+	margin: auto;
+}
+.skills-section .section-content .skills-items li:focus {
+	outline: none;
+}
+.light_theme.enable-focus-style .skills-section .section-content .skills-items li:focus {
+	box-shadow: 0 0 0 3px rgba(hsl(13, 96%, 47%), 0.7);
+}
+.dark_theme.enable-focus-style .skills-section .section-content .skills-items li:focus {
+	box-shadow: 0 0 0 3px rgba(hsl(13, 96%, 47%), 0.7);
+}
