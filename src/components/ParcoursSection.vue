@@ -185,11 +185,11 @@ export default {
 }
 
 .parcours__button:hover{
-    color: hsl(336, 88%, 45%);
+    color: hsl(336, 88%, 45%) !important;
 }
 
 .parcours__button.parcours__active{
-    color: hsl(336, 88%, 45%);
+    color: hsl(336, 88%, 45%) !important;
 }
 
 .parcours__active[data-content]{

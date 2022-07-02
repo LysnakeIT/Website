@@ -18,7 +18,6 @@ import {
   Skills_vscode,
   Skills_intellij,
   Skills_pycharm,
-  Skills_phpstorm,
   Skills_webstorm,
   Skills_node,
 } from "@/assets/skills/index.js";
@@ -83,9 +82,6 @@ export default {
         },
         {
           imgUrl: Skills_pycharm,
-        },
-        {
-          imgUrl: Skills_phpstorm,
         },
         {
           imgUrl: Skills_webstorm,

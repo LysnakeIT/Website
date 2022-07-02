@@ -24,6 +24,11 @@ const listeDesProjets = [
 		lang : 'Java',
 		img: require('@/assets/images/todoapp.jpg'),
 	},
+	{
+		title: 'Weather App',
+		lang : 'Vue.JS',
+		img: require('@/assets/images/meteo.jpg'),
+	}
 ];
 
 export default listeDesProjets;

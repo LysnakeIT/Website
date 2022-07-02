@@ -16,7 +16,6 @@ import Skills_command from '@/assets/skills/command.png';
 import Skills_vscode from '@/assets/skills/vs-code.png';
 import Skills_intellij from '@/assets/skills/intellij.png';
 import Skills_pycharm from '@/assets/skills/pycharm.png';
-import Skills_phpstorm from '@/assets/skills/phpstorm.png';
 import Skills_webstorm from '@/assets/skills/webstorm.png';
 import Skills_node from '@/assets/skills/node.png';
-export {Skills_java, Skills_javascript, Skills_python, Skills_vue, Skills_sqlite, Skills_mongo, Skills_html5, Skills_css3, Skills_angular, Skills_pugjs, Skills_ajax, Skills_git, Skills_npm, Skills_docker, Skills_command, Skills_vscode, Skills_intellij, Skills_pycharm, Skills_phpstorm, Skills_webstorm, Skills_node};
+export {Skills_java, Skills_javascript, Skills_python, Skills_vue, Skills_sqlite, Skills_mongo, Skills_html5, Skills_css3, Skills_angular, Skills_pugjs, Skills_ajax, Skills_git, Skills_npm, Skills_docker, Skills_command, Skills_vscode, Skills_intellij, Skills_pycharm, Skills_webstorm, Skills_node};
