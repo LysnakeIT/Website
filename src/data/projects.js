@@ -28,6 +28,11 @@ const listeDesProjets = [
 		title: 'Weather App',
 		lang : 'Vue.JS',
 		img: require('@/assets/images/meteo.jpg'),
+	},
+	{
+		title: 'Chat-custom-twitch',
+		lang : 'Vue.JS',
+		img: require('@/assets/images/chat-custom.jpg'),
 	}
 ];
 
