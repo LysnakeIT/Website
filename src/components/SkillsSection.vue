@@ -263,7 +263,6 @@ export default {
     border-radius: 30px;
     cursor: pointer;
     transition: color .2s cubic-bezier(.4,0,.2,1);
-    color: #000;
 }
 
 .toggle-switch-btn .switcher-toggle {
