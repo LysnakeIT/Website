@@ -3,29 +3,22 @@ export default {
 	data: () => {
 		return {
 			title: ' Mon parcours scolaire / professionel',
+            parcoursType: "etudes",
+            parcoursActiveEtude: "parcours__active",
+            parcoursActiveProfessionnel: "",
 		};
 	},
     methods: {
 		changeParcours() {
-			const tabs = document.querySelectorAll('[data-target]'),
-			tabContents = document.querySelectorAll('[data-content]')
-
-			tabs.forEach(tab =>{
-				tab.addEventListener('click', ()=>{
-					const target = document.querySelector(tab.dataset.target);
-
-					tabContents.forEach(tabContent =>{
-						tabContent.classList.remove('parcours__active');
-					});
-
-					target.classList.add('parcours__active');
-
-					tabs.forEach(tab =>{
-						tab.classList.remove('parcours__active');
-					})
-					tab.classList.add('parcours__active');
-				})
-			})
+            if (this.parcoursType === "etudes") {
+                this.parcoursType = "professionel";
+                this.parcoursActiveEtude = "";
+                this.parcoursActiveProfessionnel = "parcours__active";
+            } else {
+                this.parcoursType = "etudes";
+                this.parcoursActiveEtude = "parcours__active";
+                this.parcoursActiveProfessionnel = "";
+            }
 		}
 	}
 };
@@ -40,19 +33,19 @@ export default {
 
         <div class="qualification__container">
             <div class="parcours__tabs">
-                <div class="dark:text-ternary-light parcours__button button--flex parcours__active" @click="changeParcours()" data-target="#education">
+                <div class="dark:text-ternary-light parcours__button button--flex" :class="parcoursActiveEtude" @click="changeParcours()">
                     <i class="uil uil-graduation-cap qualification__icon"></i>
                     Études
                 </div>
 
-                <div class="dark:text-ternary-light parcours__button button--flex" @click="changeParcours()" data-target="#work">
+                <div class="dark:text-ternary-light parcours__button button--flex" :class="parcoursActiveProfessionnel" @click="changeParcours()">
                     <i class="uil uil-briefcase-alt qualification__icon"></i>
                     Professionnels
                 </div>
             </div>
 
             <div class="parcours__sections">
-                <div class="parcours__active" data-content id="education">
+                <div :class="parcoursActiveEtude" v-show="parcoursType === 'etudes'">
                     <div class="parcours__data">
                         <div>
                             <h3 class="dark:text-ternary-light parcours__title">D.U.T INFORMATIQUE</h3>
@@ -86,7 +79,7 @@ export default {
                     </div>
                 </div>
 
-                <div data-content id="work">
+                <div :class="parcoursActiveProfessionnel" v-show="parcoursType === 'professionel'">
                     <div class="parcours__data">
                         <div>
                             <h3 class="dark:text-ternary-light parcours__title">Développeur front</h3>
