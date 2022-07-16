@@ -9,15 +9,17 @@ export default {
 		};
 	},
     methods: {
-		changeParcours() {
-            if (this.parcoursType === "etudes") {
+		changeParcours(id) {
+            if (id === 1) {
                 this.parcoursType = "professionel";
                 this.parcoursActiveEtude = "";
                 this.parcoursActiveProfessionnel = "parcours__active";
+                console.log("parcours professionel");
             } else {
                 this.parcoursType = "etudes";
                 this.parcoursActiveEtude = "parcours__active";
                 this.parcoursActiveProfessionnel = "";
+                console.log("parcours etudes");
             }
 		}
 	}
@@ -33,12 +35,12 @@ export default {
 
         <div class="qualification__container">
             <div class="parcours__tabs">
-                <div class="dark:text-ternary-light parcours__button button--flex" :class="parcoursActiveEtude" @click="changeParcours()">
+                <div class="dark:text-ternary-light parcours__button button--flex" :class="parcoursActiveEtude" @click="changeParcours(0)">
                     <i class="uil uil-graduation-cap qualification__icon"></i>
                     Études
                 </div>
 
-                <div class="dark:text-ternary-light parcours__button button--flex" :class="parcoursActiveProfessionnel" @click="changeParcours()">
+                <div class="dark:text-ternary-light parcours__button button--flex" :class="parcoursActiveProfessionnel" @click="changeParcours(1)">
                     <i class="uil uil-briefcase-alt qualification__icon"></i>
                     Professionnels
                 </div>
