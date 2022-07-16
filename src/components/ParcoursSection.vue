@@ -14,12 +14,10 @@ export default {
                 this.parcoursType = "professionel";
                 this.parcoursActiveEtude = "";
                 this.parcoursActiveProfessionnel = "parcours__active";
-                console.log("parcours professionel");
             } else {
                 this.parcoursType = "etudes";
                 this.parcoursActiveEtude = "parcours__active";
                 this.parcoursActiveProfessionnel = "";
-                console.log("parcours etudes");
             }
 		}
 	}
