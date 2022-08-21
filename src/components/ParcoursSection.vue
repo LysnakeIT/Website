@@ -48,14 +48,13 @@ export default {
                 <div :class="parcoursActiveEtude" v-show="parcoursType === 'etudes'">
                     <div class="parcours__data">
                         <div>
-                            <h3 class="dark:text-ternary-light parcours__title">D.U.T INFORMATIQUE</h3>
-                            <span class="dark:text-ternary-light parcours__subtitle">IUT de Vannes</span>
+                            <h3 class="dark:text-ternary-light parcours__title">Diplôme d'ingénieur en cybersécurité et IoT</h3>
+                            <span class="dark:text-ternary-light parcours__subtitle">ESAIP</span>
                             <div class="parcours__calendar">
                                 <i class="uil uil-calendar-alt"></i>
-                                Septembre, 2020 - Juin, 2022
+                                Septembre, 2022 - Septembre, 2025
                             </div>
                         </div>
-
                         <div>
                             <span class="parcours__rounder"></span>
                             <span class="parcours__line"></span>
@@ -66,8 +65,19 @@ export default {
                         <div></div>
                         <div>
                             <span class="parcours__rounder"></span>
+                            <span class="parcours__line"></span>
                         </div>
+                        <div>
+                            <h3 class="dark:text-ternary-light parcours__title">D.U.T INFORMATIQUE</h3>
+                            <span class="dark:text-ternary-light parcours__subtitle">IUT de Vannes</span>
+                            <div class="parcours__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                Septembre, 2020 - Juin, 2022
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="parcours__data">
                         <div>
                             <h3 class="dark:text-ternary-light parcours__title">Baccalauréat STI2D SIN</h3>
                             <span class="dark:text-ternary-light parcours__subtitle">Lycée les Iris</span>
@@ -75,6 +85,9 @@ export default {
                                 <i class="uil uil-calendar-alt"></i>
                                 Septembre, 2017 - Juin, 2020
                             </div>
+                        </div>
+                        <div>
+                            <span class="parcours__rounder"></span>
                         </div>
                     </div>
                 </div>
