@@ -95,7 +95,7 @@ export default {
                 <div :class="parcoursActiveProfessionnel" v-show="parcoursType === 'professionel'">
                     <div class="parcours__data">
                         <div>
-                            <h3 class="dark:text-ternary-light parcours__title">Développeur front</h3>
+                            <h3 class="dark:text-ternary-light parcours__title">Développeur Front-End</h3>
                             <span class="dark:text-ternary-light parcours__subtitle">
                                 <a target="_blank">TAC ECONOMICS</a>
                             </span>
