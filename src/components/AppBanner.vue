@@ -30,7 +30,7 @@ export default {
 			</h1>
 			<br>
 			<p class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400">
-				Je suis étudiant en deuxième année en informatique où j'apprends le développement informatique, mais je suis avant tout un grand passionné de la cybersécurité.
+				Je suis étudiant en troisième année d'ingénieur en apprentissage dans le domaine de la cybersécurité dont je suis un grand passionné, mais il m'arrive aussi de faire du développement informatique.
 			</p>
 			<div class="flex justify-center sm:block">
 				<a
