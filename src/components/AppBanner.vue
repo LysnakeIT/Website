@@ -50,14 +50,14 @@ export default {
 			<img
 				style="display:block; margin-left: auto; margin-right: auto; border-radius: .5rem; justify-self: center; align-self: center; width: 400px"
 				v-if="theme === 'light'"
-				src="@/assets/images/developer.jpg"
+				src="@/assets/images/developer.webp"
 				alt="Developer"
 				width="400px"
 				height="400px"/>
 			<img
 				style="display:block; margin-left: auto; margin-right: auto; border-radius: .5rem; justify-self: center; align-self: center; width: 400px;"
 				v-else
-				src="@/assets/images/developer.jpg"
+				src="@/assets/images/developer.webp"
 				alt="Developer"/>
 		</div>
 	</section>
