@@ -97,7 +97,7 @@ export default {
                         <div>
                             <h3 class="dark:text-ternary-light parcours__title">Développeur Front-End</h3>
                             <span class="dark:text-ternary-light parcours__subtitle">
-                                <a>TAC ECONOMICS</a>
+                                <p style="margin : 0 !important;">TAC ECONOMICS</p>
                             </span>
                             <div class="parcours__calendar">
                                 <i class="uil uil-calendar-alt"></i>
@@ -119,7 +119,7 @@ export default {
                         <div>
                             <h3 class="dark:text-ternary-light parcours__title">Agent de fabrication</h3>
                             <span class="dark:text-ternary-light parcours__subtitle">
-                                <a>SIKA</a>
+                                <p style="margin : 0 !important;">SIKA</p>
                             </span>
                             <div class="parcours__calendar">
                                 <i class="uil uil-calendar-alt"></i>
@@ -132,7 +132,7 @@ export default {
                         <div>
                             <h3 class="dark:text-ternary-light parcours__title">ASTEP</h3>
                             <span class="dark:text-ternary-light parcours__subtitle">
-                                <a>Ecole de Sené</a>
+                                <p style="margin : 0 !important;">Ecole de Sené</p>
                             </span>
                             <div class="parcours__calendar">
                                 <i class="uil uil-calendar-alt"></i>
@@ -153,7 +153,7 @@ export default {
                         <div>
                             <h3 class="dark:text-ternary-light parcours__title">Stage développement web 3ème</h3>
                             <span class="dark:text-ternary-light parcours__subtitle">
-                                <a>Dotsafe</a>
+                                <p style="margin : 0 !important;">Dotsafe</p>
                             </span>
                             <div class="parcours__calendar">
                                 <i class="uil uil-calendar-alt"></i>
