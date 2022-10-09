@@ -23,13 +23,10 @@ export default {
 </script>
 
 <template>
-	<head>
-		<link rel="preload" href="@/assets/images/developer.webp" as="image">
-	</head>
 	<section class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10">
 		<div class="w-full md:w-1/3 text-left">
 			<h1 class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase">
-				Salut ! Moi c'est Lilian a.k.a Lysnake  <img src="@/assets/images/hi.gif" width="30px" style="display: initial; vertical-align: initial;" alt="Gif salut"/>
+				Salut ! Moi c'est Lilian a.k.a Lysnake  <img src="@/assets/images/hi.gif" width="30px" height="30px" style="display: initial; vertical-align: initial;" alt="Gif salut"/>
 			</h1>
 			<br>
 			<p class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400">
