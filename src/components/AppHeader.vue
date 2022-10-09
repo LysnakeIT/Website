@@ -36,7 +36,7 @@ export default {
 							src="@/assets/images/logo-light.webp"
 							class="w-36"
 							width="144"
-							height="37"
+							height="65"
 							alt="Dark Logo"
 							onclick="window.location='https://github.com/LysnakeIT'"/>
 						<img
@@ -44,7 +44,7 @@ export default {
 							src="@/assets/images/logo-light.webp"
 							class="w-36"
 							width="144"
-							height="37"
+							height="65"
 							alt="Light Logo"
 							onclick="window.location='https://github.com/LysnakeIT'"/>
 					</router-link>
