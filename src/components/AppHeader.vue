@@ -35,12 +35,16 @@ export default {
 							v-if="theme === 'light'"
 							src="@/assets/images/logo-light.webp"
 							class="w-36"
+							width="144"
+							height="37"
 							alt="Dark Logo"
 							onclick="window.location='https://github.com/LysnakeIT'"/>
 						<img
 							v-else
 							src="@/assets/images/logo-light.webp"
 							class="w-36"
+							width="144"
+							height="37"
 							alt="Light Logo"
 							onclick="window.location='https://github.com/LysnakeIT'"/>
 					</router-link>
