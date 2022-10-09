@@ -39,7 +39,9 @@ export default {
 					class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-purple-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-purple-50 focus:ring-1 focus:ring-purple-900 hover:bg-purple-500 text-gray-500 hover:text-white duration-500"
 					style="background-color: hsl(336, 88%, 45%); color: #FFF;"
 					aria-label="Download CV">
-					<i class="uil uil-download-alt button__icon ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"></i>
+                    <svg width="1em" xmlns="http://www.w3.org/2000/svg" class="button__icon ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100" fill="currentColor" data-name="Layer 1" viewBox="0 0 24 24">
+						<path d="M8.29,13.29a1,1,0,0,0,0,1.42l3,3a1,1,0,0,0,1.42,0l3-3a1,1,0,0,0-1.42-1.42L13,14.59V3a1,1,0,0,0-2,0V14.59l-1.29-1.3A1,1,0,0,0,8.29,13.29ZM18,9H16a1,1,0,0,0,0,2h2a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H8A1,1,0,0,0,8,9H6a3,3,0,0,0-3,3v7a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V12A3,3,0,0,0,18,9Z"/>
+					</svg>
 					<span class="text-sm sm:text-lg font-general-medium duration-100">Télécharger CV</span>
 				</a>
 			</div>
