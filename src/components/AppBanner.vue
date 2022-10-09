@@ -54,12 +54,14 @@ export default {
 				v-if="theme === 'light'"
 				src="@/assets/images/developer.webp"
 				alt="Developer"
+				rel="preload"
 				width="400px"
 				height="400px"/>
 			<img
 				style="display:block; margin-left: auto; margin-right: auto; border-radius: .5rem; justify-self: center; align-self: center; width: 400px;"
 				v-else
 				src="@/assets/images/developer.webp"
+				rel="preload"
 				alt="Developer"/>
 		</div>
 	</section>
