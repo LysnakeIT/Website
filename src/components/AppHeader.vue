@@ -33,13 +33,13 @@ export default {
 					<router-link to="/">
 						<img
 							v-if="theme === 'light'"
-							src="@/assets/images/logo-light.png"
+							src="@/assets/images/logo-light.webp"
 							class="w-36"
 							alt="Dark Logo"
 							onclick="window.location='https://github.com/LysnakeIT'"/>
 						<img
 							v-else
-							src="@/assets/images/logo-light.png"
+							src="@/assets/images/logo-light.webp"
 							class="w-36"
 							alt="Light Logo"
 							onclick="window.location='https://github.com/LysnakeIT'"/>
