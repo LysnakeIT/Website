@@ -160,7 +160,7 @@ export default {
           <ul v-show="skillsType === 'skills'">
             <li v-for="skill in skillsItems" :key="skill.imgUrl">
               <div class="skill-icon">
-                <img :src="skill.imgUrl" />
+                <img :src="skill.imgUrl" alt="Logo d'un langage / framework de programmation" />
               </div>
             </li>
           </ul>
@@ -168,7 +168,7 @@ export default {
           <ul v-show="skillsType === 'tools'">
             <li v-for="tool in toolsItems" :key="tool.imgUrl">
               <div class="skill-icon">
-                <img :src="tool.imgUrl" />
+                <img :src="tool.imgUrl" alt="Logo d'un outil informatique" />
               </div>
             </li>
           </ul>

@@ -26,7 +26,7 @@ export default {
 	<section class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10">
 		<div class="w-full md:w-1/3 text-left">
 			<h1 class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase">
-				Salut ! Moi c'est Lilian a.k.a Lysnake  <img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px" style="display: initial; vertical-align: initial;"/>
+				Salut ! Moi c'est Lilian a.k.a Lysnake  <img src="https://github.com/SatYu26/SatYu26/raw/master/Assets/Hi.gif" width="30px" style="display: initial; vertical-align: initial;" alt="Gif salut"/>
 			</h1>
 			<br>
 			<p class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400">
@@ -48,12 +48,14 @@ export default {
 		<!-- Banner right illustration -->
 		<div class="w-full md:w-2/3 text-right float-right">
 			<img
-				style="display:block; margin-left: auto; margin-right: auto; border-radius: .5rem; justify-self: center; align-self: center;"
+				style="display:block; margin-left: auto; margin-right: auto; border-radius: .5rem; justify-self: center; align-self: center; width: 400px"
 				v-if="theme === 'light'"
 				src="@/assets/images/developer.jpg"
-				alt="Developer"/>
+				alt="Developer"
+				width="400px"
+				height="400px"/>
 			<img
-				style="display:block; margin-left: auto; margin-right: auto; border-radius: .5rem; justify-self: center; align-self: center;"
+				style="display:block; margin-left: auto; margin-right: auto; border-radius: .5rem; justify-self: center; align-self: center; width: 400px;"
 				v-else
 				src="@/assets/images/developer.jpg"
 				alt="Developer"/>
