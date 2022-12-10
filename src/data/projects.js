@@ -33,6 +33,11 @@ const listeDesProjets = [
 		title: 'Chat-custom-twitch',
 		lang : 'Vue.JS',
 		img: require('@/assets/images/chat-custom.webp'),
+	},
+	{
+		title: 'Blind Quiz',
+		lang : 'Python',
+		img: require('@/assets/images/blindquiz.webp'),
 	}
 ];
 
