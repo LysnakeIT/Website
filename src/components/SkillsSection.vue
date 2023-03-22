@@ -130,7 +130,7 @@ export default {
                 leading-none
                 text-gray-400
               ">
-              Je développe des mini-projets personnels qui me semblent
+              Je développe des mini-projets personnels qui me semblent intéressants
               pour apprendre en essayant de nouveaux langages pour acquérir 
               de nouvelles compétences.
             </p>
