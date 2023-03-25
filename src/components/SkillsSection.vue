@@ -110,14 +110,10 @@ export default {
 <template>
   <div id="skills" class="skills-section section" tabindex="-1">
     <div class="container">
+      <h2 class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light">Compétences et outils</h2>
       <div class="section-content row">
         <div class="skills-text col-lg-6">
           <div class="text-box-inline">
-            <h2 class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light">
-              Mes compétences et
-              <br />
-              outils que j'utilise
-            </h2>
             <p
               class="
                 font-general-medium
