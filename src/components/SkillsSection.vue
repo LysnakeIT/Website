@@ -5,21 +5,20 @@ import {
   Skills_python,
   Skills_vue,
   Skills_sqlite,
-  Skills_mongo,
   Skills_html5,
   Skills_css3,
-  Skills_angular,
-  Skills_pugjs,
-  Skills_ajax,
   Skills_git,
   Skills_npm,
   Skills_docker,
   Skills_command,
   Skills_vscode,
-  Skills_intellij,
-  Skills_pycharm,
-  Skills_webstorm,
   Skills_node,
+  Skills_NIST,
+  Skills_algosec,
+  Skills_winlin,
+  Skills_cyberx,
+  Skills_network,
+  Skills_jetbrains,
 } from "@/assets/skills/index.js";
 export default {
   data: function () {
@@ -40,9 +39,6 @@ export default {
           imgUrl: Skills_sqlite,
         },
         {
-          imgUrl: Skills_mongo,
-        },
-        {
           imgUrl: Skills_vue,
         },
         {
@@ -51,19 +47,33 @@ export default {
         {
           imgUrl: Skills_css3,
         },
+      ],
+      cyberItems: [
         {
-          imgUrl: Skills_angular,
+          imgUrl: Skills_NIST,
         },
         {
-          imgUrl: Skills_pugjs,
+          imgUrl: Skills_algosec,
+        },
+        {
+          imgUrl: Skills_winlin,
+        },
+        {
+          imgUrl: Skills_cyberx,
+        },
+        {
+          imgUrl: Skills_network,
         },
       ],
       toolsItems: [
         {
-          imgUrl: Skills_ajax,
+          imgUrl: Skills_command,
         },
         {
           imgUrl: Skills_git,
+        },
+        {
+          imgUrl: Skills_node,
         },
         {
           imgUrl: Skills_npm,
@@ -72,22 +82,10 @@ export default {
           imgUrl: Skills_docker,
         },
         {
-          imgUrl: Skills_command,
-        },
-        {
           imgUrl: Skills_vscode,
         },
         {
-          imgUrl: Skills_intellij,
-        },
-        {
-          imgUrl: Skills_pycharm,
-        },
-        {
-          imgUrl: Skills_webstorm,
-        },
-        {
-          imgUrl: Skills_node,
+          imgUrl: Skills_jetbrains,
         },
       ],
     };
@@ -110,7 +108,7 @@ export default {
 <template>
   <div id="skills" class="skills-section section" tabindex="-1">
     <div class="container">
-      <h2 class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light">Compétences et outils</h2>
+      <h2 class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light">Skills and tools</h2>
       <div class="section-content row">
         <div class="skills-text col-lg-6">
           <div class="text-box-inline">
@@ -126,9 +124,8 @@ export default {
                 leading-none
                 text-gray-400
               ">
-              Je développe des mini-projets personnels qui me semblent intéressants
-              pour apprendre en essayant de nouveaux langages pour acquérir 
-              de nouvelles compétences.
+              I develop personal mini-projects that I find interesting for 
+              learning by trying out new languages to acquire new skills.
             </p>
             <div ref="skillsSwitchBtn" class="toggle-switch-btn text-xl dark:text-ternary-light mb-2">
               <input
@@ -137,16 +134,22 @@ export default {
                 type="radio"
                 value="skills"
                 checked/>
-              <label for="skills-list" class="link-hover">Compétences</label>
+              <label for="skills-list" class="link-hover">Skills</label>
+              <input
+                id="cyber-list"
+                v-model="skillsType"
+                type="radio"
+                value="cyber"/>
+              <label for="cyber-list" class="link-hover">Cybersecurity</label>
               <input
                 id="tools-list"
                 v-model="skillsType"
                 type="radio"
                 value="tools"/>
-              <label for="tools-list" class="link-hover">Outils</label>
-              <span
+              <label for="tools-list" class="link-hover">Tools</label>
+               <span
                 class="switcher-toggle"
-                style="width: calc((100% - 8px) / 2)">
+                style="width: calc((100% - 30px) / 3)">
               </span>
             </div>
           </div>
@@ -157,6 +160,14 @@ export default {
             <li v-for="skill in skillsItems" :key="skill.imgUrl">
               <div class="skill-icon">
                 <img :src="skill.imgUrl" alt="Logo d'un langage / framework de programmation" />
+              </div>
+            </li>
+          </ul>
+
+          <ul v-show="skillsType === 'cyber'">
+            <li v-for="cyber in cyberItems" :key="cyber.imgUrl">
+              <div class="skill-icon">
+                <img :src="cyber.imgUrl" alt="Logo d'un langage / framework de programmation" />
               </div>
             </li>
           </ul>
@@ -174,7 +185,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scope>
 .section:not(.page) {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -273,7 +284,12 @@ export default {
 }
 
 .toggle-switch-btn input:nth-of-type(2):checked ~ .switcher-toggle {
-	transform: translateX(100%);
+    transform: translateX(70%) !important;
+    width: calc((100% + 80px) / 3) !important;
+}
+
+.toggle-switch-btn input:nth-of-type(3):checked ~ .switcher-toggle {
+    transform: translateX(215%);
 }
 
 .skills-section .section-content {
