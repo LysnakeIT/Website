@@ -6,7 +6,7 @@ const listeDesProjets = [
 		img: require('@/assets/images/kromabot.webp'),
 	},
 	{
-		title: 'Les batisseurs du Moyen-Age',
+		title: 'Bâtisseurs du Moyen-Age',
 		lang : 'Java',
 		link: 'https://github.com/LysnakeIT/Les-Batisseurs-Moyen-Age',
 		img: require('@/assets/images/batisseurs.webp'),
