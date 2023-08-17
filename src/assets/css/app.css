@@ -6,6 +6,7 @@
 
 /*==================== Font ====================*/
 
+
 @font-face {
 	font-family: 'GeneralSans-Regular';
 	src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
@@ -65,8 +66,7 @@
 /*==================== General ====================*/
 .router-link-active,
 .router-link-exact-active {
-	@apply text-indigo-800;
-	@apply text-indigo-600 dark:text-indigo-300;
+	color: hsl(336, 88%, 45%);
 }
 * {
 	box-sizing: border-box;

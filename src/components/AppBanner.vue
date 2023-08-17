@@ -165,7 +165,7 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+    background: linear-gradient(45deg, #d80e5f, #2563eb, #4B0082, #1e3851, #d80e5f, #2563eb, #4B0082, #1e3851, #df0ea0);
     width: 100%;
     height: 100%;
     transform: scale(1.02);
