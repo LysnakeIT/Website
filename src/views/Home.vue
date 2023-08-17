@@ -14,13 +14,16 @@ export default {
 	},
 	data() {
 		return {
-			activeLink: 'home' // Par défaut, le lien d'accueil est actif.
+			activeLink: 'home'
 		}
 	},
 	methods: {
 		setActive(link) {
-			this.activeLink = link;
-		}
+            this.activeLink = link;
+            this.$nextTick(() => {
+                window.location.hash = link;
+            });
+        }
 	}
 };
 </script>
@@ -31,8 +34,8 @@ export default {
 		<nav id="navbar" class="navbar nav-menu">
 			<ul>
 				<li><a href="#home" @click="setActive('home')" :class="{ active: activeLink === 'home' }"><i class="bx bx-home"></i> <span>Home</span></a></li>
-				<li><a href="#parcours" @click="setActive('parcours')" :class="{ active: activeLink === 'parcours' }"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-				<li><a href="#skills" @click="setActive('skills')" :class="{ active: activeLink === 'skills' }"><i class="bx bx-server"></i> <span>Services</span></a></li>
+				<li><a href="#parcours" @click="setActive('parcours')" :class="{ active: activeLink === 'parcours' }"><i class="bx bx-detail"></i> <span>Resume</span></a></li>
+				<li><a href="#skills" @click="setActive('skills')" :class="{ active: activeLink === 'skills' }"><i class="bx bx-bulb"></i> <span>Skills & Tools</span></a></li>
 				<li><a href="#ProjectsGrid" @click="setActive('ProjectsGrid')" :class="{ active: activeLink === 'ProjectsGrid' }"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
 			</ul>
 		</nav>
@@ -154,7 +157,6 @@ export default {
     text-rendering: auto;
     display: inline-block;
     text-transform: none;
-    speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
